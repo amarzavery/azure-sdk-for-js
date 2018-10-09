@@ -39,8 +39,12 @@
     "minimist": "^1.2.0",
     "path": "^0.12.7",
     "ts-node": "^7.0.1",
-    "typescript": "^3.0.3",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.1",
     "webpack": "^4.19.0",
     "yargs": "^12.0.2"
+  },
+  "scripts": {
+    "tslint": "tslint -p . -c tslint.json --exclude \"./test/**/*.ts\" --exclude \"./packages/**/*.ts\""
   }
 }
